@@ -12,7 +12,7 @@ NoSharp's TCP plugin for Onset
   -- Connects to a socket
   sock_connect(IpAddress, port) -- IpAddress is a String, Port is an integer. Returns an integer (aka the socket id).
   -- Reads a payload from a server
-  sock_read(socketId, bytestoread) -- SocketId is an Integer, BytesToRead is an integer, returns string.
+  sock_read(socketId, bytestoread) -- SocketId is an Integer, BytesToRead is an integer. Returns string.
   -- Send data to the socket.
   sock_send(socketId, data) -- SocketId is an Integer, Data is a string. Returns nothing.
 
