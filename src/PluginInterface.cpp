@@ -6,9 +6,7 @@ Onset::IServerPlugin* Onset::Plugin::_instance = nullptr;
 
 EXPORT(int) OnPluginStart()
 {
-	// initialize plugin singleton
 	Plugin::Get();
-
 	Onset::Plugin::Get()->Log("Loaded Socket Library");
 	return 1;
 }

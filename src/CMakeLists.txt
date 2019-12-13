@@ -3,6 +3,7 @@
         Singleton.hpp
         Plugin.hpp
         Plugin.cpp
+		Helpers.hpp
         )
 
 target_include_directories(NTCPP  PRIVATE
@@ -12,6 +13,9 @@ target_include_directories(NTCPP  PRIVATE
 set_property(TARGET NTCPP  PROPERTY CXX_STANDARD 17)
 set_property(TARGET NTCPP  PROPERTY CXX_STANDARD_REQUIRED ON)
 set_property(TARGET NTCPP  PROPERTY PREFIX "")
+if(WIN32)
+	target_link_libraries(NTCPP wsock32 ws2_32)
+endif()
 
 target_link_libraries(NTCPP  ${HORIZONSDK_LIBRARY})
 
@@ -29,7 +33,7 @@ elseif(UNIX)
             -Wall
             -Wextra
             -pedantic
-            -Werror
+
             -Wno-unused-function
             )
 endif()
