@@ -1,5 +1,5 @@
 # NTCPP
-## This is in no way complete and will be added to.
+## The game this was made for has died, Feel free to use however you like.
 ## Have a bug? Please post it on the issues or PM me on discord nosharp#8669 :)
 
 NoSharp's TCP plugin for Onset
